@@ -139,7 +139,6 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 	margin: 0 0 .7em 0;
 	color: #288FBE;
-	text-transform: uppercase;
 }
 
 h1 {
@@ -152,7 +151,8 @@ h2 {
 }
 
 h3 {
-	font-size: 1.4em;
+	font-size: 1.3em;
+	color: #666;
 }
 
 p {
