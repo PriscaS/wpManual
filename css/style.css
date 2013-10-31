@@ -1,0 +1,383 @@
+/*
+Info: 			WordPress Manual
+				WOODTECH INTERIORS
+
+Version: 		1.0
+Author: 		Eyedea Studio
+Author URI: 	http://eyedea.eu
+*/
+
+/*-------------------------------------------------------------*/
+
+
+@import "http://fonts.googleapis.com/css?family=Vollkorn";
+
+/* Eric Meyer's Reset Reloaded - thanks, Eric :-)  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	text-rendering: optimizeLegibility; 
+	box-sizing: border-box;	
+}
+
+/* remember to define focus styles! */
+
+:focus {
+	outline: 0;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote {
+	font-size: 1.1em;
+	font-style: italic;
+	margin-bottom: 1em;
+	padding: .8em .8em .8em 1.6em;
+	color: #60311F;
+	border-right: 2px solid #AD885A;
+	border-bottom: 2px solid #AD885A;
+}
+.page blockquote {
+	border-right: 2px solid #A32002;
+	border-top: 2px solid #A32002;
+	border-bottom: 0;	
+}
+blockquote:before {
+	content: ' \201C ';
+	float: left;
+	margin: -.4em 0 0 -.5em;
+	font-size: 3em;
+	font-family: 'Balthazar', serif;
+	font-style: normal;
+	color: #CFA977;
+		
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+img.alignleft {
+	width: auto;
+	height: auto;
+	float: left;
+}
+img.alignright {
+	width: auto;
+	height: auto;
+	float: right;
+}
+img.med {
+	width: 35%;
+	height: auto;	
+}
+/* HTML 5 resets */
+
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+
+/************** STRUCTURE ****************/
+html {
+	height: 100%;
+
+}
+body {
+	font-family: Vollkorn, Georgia, Times, serif;
+	font-size: 1em;
+	line-height: 1.4;
+	color: #333;
+
+	border-top: 4px solid #333;
+	border-bottom: 12px solid #666;
+}
+
+.wrap {
+	max-width: 960px;
+	width: 90%;
+	margin: 2em auto 4em auto;
+	overflow: hidden;
+}
+
+/************** TYPOGRAPHY ****************/
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	margin: 0 0 .7em 0;
+	color: #288FBE;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 1.8em;
+	margin: 0 0 .9em 0;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+p {
+	font-size: .92em;
+	margin: 0 0 1.1em 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+.intro {
+	font-size: 1.1em;
+	line-height: 1.3;
+	color: #999;
+}
+
+
+/************** LISTS ****************/
+ul {
+	list-style: none;
+	margin: 0 0 1.2em 0;
+}
+
+ul li {
+	font-size: .9em;
+	padding: .2em 0;
+}
+
+.nav li{
+	display: inline;
+}
+
+.nav li a {
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.disc li:before {
+	content: '\2022';
+	padding-right: 10px;
+}
+
+.filter li:before, .footnav li:before {
+	content: '//';
+	padding-right: .8em;
+}
+
+.filter li:first-child:before, .footnav li:first-child:before {
+	content: '';
+	padding-right: 0;
+}
+
+dl {
+	overflow: hidden;
+	margin:0 0 10px 0;
+}
+dt {
+	float:left;
+	width: 15%;
+	font-weight: bold;
+	padding: 5px 0;
+}
+
+dd {
+	float:right;
+	width: 83%;
+	padding: 5px 0;
+}
+
+/************** LINKS ****************/
+a {
+	text-decoration: none;
+	color: #288FBE;
+}
+
+/************** IMAGES ****************/
+article img {
+	margin-bottom: 15px;
+}
+
+/************** HEADER ****************/
+header {
+}
+
+header .wrap {
+	max-width: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+header h1 {
+	margin: .3em 0 .5em 0;
+	width: 100%;
+	border-bottom: 2px solid #288FBE;	
+}
+
+header h1 a {
+	display: block;
+	width: 80%;
+	max-width: 350px;
+	margin: 0 auto;
+	position: relative;
+}
+/************** HEADER NAVIGATION ****************/
+nav { 
+/*	clear: both;*/
+	font-size: 1.3em;
+}
+
+nav strong {
+	display: block;
+	color: #288FBE;
+	font-size: 1.6em;
+  	text-align: center;
+}
+nav strong:hover {
+	cursor: pointer;
+  	background: #288FBE;
+  	color: #fff;
+}
+nav ul {
+	list-style: none;
+	overflow: hidden;
+	text-align: center;
+}
+nav ul li {
+	padding: 0;
+}
+nav ul li a:link, nav ul li a:visited {
+	display: block;
+	padding: .36em 0;
+	color: #288FBE;
+	text-decoration: none;
+}
+nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
+	color: #fff; 
+	background: #288FBE;
+}
+
+nav li.current-menu-item a {
+	font-weight: bold;
+	background: rgb(249,247,244);
+	background: rgba(249,247,244,.4); 	
+}
+
+/************** CONTENT ****************/
+article {
+	overflow: hidden;
+	padding: 0 1em;
+	margin: 0 -1em;
+	position: relative;
+}
+
+/************** FOOTER ****************/
+footer {
+	text-align: center;
+	padding: 3em;
+	padding: 1.5em 0 0 0;
+	border-top: 1px solid #288FBE;
+}
+footer p {
+/*	font-size: .9em;	*/
+}
+
+/************** RESPONISIVE ****************/
+/* 2 col menu */
+@media (min-width: 460px) {
+	
+	h1 {
+		font-size: 1.6em;
+	}
+	h2 {
+		font-size: 1.4em;
+	}
+	nav ul {
+		text-align: left;
+	}
+	nav ul li {
+		padding: 0;
+		width: 50%;
+		float: left;
+	}
+	nav ul li a:link {
+		padding: .36em 2em;
+	}
+
+}
+/* 2 column content */
+@media (min-width: 630px) {
+
+}
+
+/* horiz menu */
+@media (min-width: 780px) {
+	header h1 {
+		margin: 1em 0 .5em 0;
+	}	
+	header h1 a {
+		display: block;
+		max-width: 960px;
+		width: 90%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	nav ul {
+		margin: 0 auto;	
+		max-width: 960px;
+		width: 90%;	
+	}
+	nav ul li {
+		width: auto;
+		display: inline;
+		padding: 0;
+		text-align: left;
+	}
+	nav ul li a:link {
+		display: inline-block;
+		padding: .36em .6em;
+	}	
+	
+}
+
