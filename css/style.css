@@ -122,8 +122,6 @@ body {
 	font-size: 1em;
 	line-height: 1.4;
 	color: #333;
-
-	border-top: 4px solid #333;
 	border-bottom: 12px solid #666;
 }
 
@@ -240,6 +238,13 @@ article img {
 
 /************** HEADER ****************/
 header {
+	background: #fff;
+	border-top: 4px solid #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 11;
 }
 
 header .wrap {
@@ -263,8 +268,13 @@ header h1 a {
 }
 /************** HEADER NAVIGATION ****************/
 nav { 
-/*	clear: both;*/
+	background: #fff;
 	font-size: 1.3em;
+	position: fixed;
+	top: 60px;
+	left: 0;
+	right: 0;
+	z-index: 12;
 }
 
 nav strong {
@@ -304,11 +314,21 @@ nav li.current-menu-item a {
 }
 
 /************** CONTENT ****************/
+.content {
+	margin-top: 130px;
+	position: relative;
+	z-index: 10;
+}
+
 article {
 	overflow: hidden;
 	padding: 0 1em;
 	margin: 0 -1em;
 	position: relative;
+}
+
+figure {
+	margin: 1em 0;
 }
 
 /************** FOOTER ****************/
@@ -331,6 +351,9 @@ footer p {
 	}
 	h2 {
 		font-size: 1.4em;
+	}
+	nav {
+		top: 45px;
 	}
 	nav ul {
 		text-align: left;
@@ -361,6 +384,10 @@ footer p {
 		width: 90%;
 		margin: 0 auto;
 		position: relative;
+	}
+
+	nav {
+		top: 70px;
 	}
 
 	nav ul {
