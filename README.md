@@ -1,4 +1,3 @@
 wpManual
-========
 
-notes for clients : WordPress cusom manual
+hand-over notes for clients : WordPress custom manual
