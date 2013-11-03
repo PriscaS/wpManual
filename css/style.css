@@ -145,9 +145,19 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.8em;
+	border-bottom: 1px solid #598FBC;	
 }
 
+h2:before {
+	font-family: Arial Unicode, Arial Unicode MS, sans-serif;
+	font-size: 1.6em;
+	line-height: 1;
+	content: ' \270E ';
+	margin: 0 .36em 0 0;
+
+	
+}
 h3 {
 	font-size: 1.3em;
 	color: #666;
@@ -324,7 +334,7 @@ nav li.current-menu-item a {
 article {
 	overflow: hidden;
 	padding: 0 1em;
-	margin: 0 -1em;
+	margin: 0 -1em 5em -1em;
 	position: relative;
 }
 
