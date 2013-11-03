@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 1.8em;
+	font-size: 2em;
 	margin: 0 0 .9em 0;
 }
 
@@ -254,7 +254,7 @@ header .wrap {
 }
 
 header h1 {
-	margin: .3em 0 .5em 0;
+	margin: .3em 0 0 0;
 	width: 100%;
 	border-bottom: 2px solid #288FBE;	
 }
@@ -271,7 +271,7 @@ nav {
 	background: #f9f9f9;
 	font-size: 1.3em;
 	position: fixed;
-	top: 60px;
+	top: 50px;
 	left: 0;
 	right: 0;
 	z-index: 12;
@@ -343,18 +343,17 @@ footer p {
 /*	font-size: .9em;	*/
 }
 
-/************** RESPONISIVE ****************/
+/************** RESPONSIVE ****************/
 /* 2 col menu */
 @media (min-width: 460px) {
-	
-	h1 {
-		font-size: 1.6em;
-	}
+	header h1 {
+		margin: .5em 0 0 0;
+	}	
 	h2 {
 		font-size: 1.4em;
 	}
 	nav {
-		top: 45px;
+		top: 60px;
 	}
 	nav ul {
 		text-align: left;
@@ -367,7 +366,11 @@ footer p {
 	nav ul li a:link {
 		padding: .36em 2em;
 	}
-
+	.content {
+		margin-top: 230px;
+		position: relative;
+		z-index: 10;
+	}
 }
 /* 2 column content */
 @media (min-width: 630px) {
@@ -377,7 +380,7 @@ footer p {
 /* horiz menu */
 @media (min-width: 780px) {
 	header h1 {
-		margin: 1em 0 .5em 0;
+		margin: 1em 0 0 0;
 	}	
 	header h1 a {
 		display: block;
@@ -388,7 +391,7 @@ footer p {
 	}
 
 	nav {
-		top: 70px;
+		top: 76px;
 	}
 
 	nav ul {
@@ -406,6 +409,10 @@ footer p {
 		display: inline-block;
 		padding: .36em .6em;
 	}	
-	
+	.content {
+		margin-top: 150px;
+		position: relative;
+		z-index: 10;
+	}
 }
 
