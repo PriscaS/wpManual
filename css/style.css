@@ -268,13 +268,14 @@ header h1 a {
 }
 /************** HEADER NAVIGATION ****************/
 nav { 
-	background: #fff;
+	background: #f9f9f9;
 	font-size: 1.3em;
 	position: fixed;
 	top: 60px;
 	left: 0;
 	right: 0;
 	z-index: 12;
+	box-shadow: 0px 15px 15px 15px #fff;
 }
 
 nav strong {
