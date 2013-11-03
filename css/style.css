@@ -268,13 +268,14 @@ header h1 a {
 }
 /************** HEADER NAVIGATION ****************/
 nav { 
-	background: #fff;
+	background: #F9F9F9;
 	font-size: 1.3em;
 	position: fixed;
 	top: 60px;
 	left: 0;
 	right: 0;
 	z-index: 12;
+	box-shadow: 0px 10px 20px #fff;
 }
 
 nav strong {
@@ -292,6 +293,7 @@ nav ul {
 	list-style: none;
 	overflow: hidden;
 	text-align: center;
+	margin: 0;
 }
 nav ul li {
 	padding: 0;
